@@ -1,4 +1,7 @@
 // ContextProvider.js
+// Author: Yan Nazzim Gonzalez
+// Date: 3/10/2024
+// Front End Capstone
 import React, { createContext, useContext } from 'react';
 
 const MyContext = createContext();

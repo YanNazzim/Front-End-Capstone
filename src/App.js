@@ -1,4 +1,7 @@
 // App.js
+// Author: Yan Nazzim Gonzalez
+// Date: 3/10/2024
+// Front End Capstone
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";

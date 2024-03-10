@@ -1,4 +1,7 @@
 // DarkModeProvider.js
+// Author: Yan Nazzim Gonzalez
+// Date: 3/10/2024
+// Front End Capstone
 import React, { createContext, useState, useContext } from "react";
 
 export const DarkModeContext = createContext();

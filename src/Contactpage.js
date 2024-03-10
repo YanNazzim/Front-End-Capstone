@@ -1,3 +1,6 @@
+// Author: Yan Nazzim Gonzalez
+// Date: 3/10/2024
+// Front End Capstone
 import { Link } from "react-router-dom";
 
 function Contactpage() {

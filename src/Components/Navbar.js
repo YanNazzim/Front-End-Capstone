@@ -1,4 +1,7 @@
 // src/components/Navbar.js
+// Author: Yan Nazzim Gonzalez
+// Date: 3/10/2024
+// Front End Capstone
 import React from "react";
 import { Link } from "react-router-dom";
 
