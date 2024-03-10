@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
@@ -12,24 +13,184 @@ code {
     monospace;
 }
 
-ul {
+/* Header.css */
+
+.header {
   display: flex;
-  width: 100vw;
-  background: #1d4522;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #1d4522;
+  /* Add other common styles for light mode */
 }
 
-li, #navLinks {
-  list-style-type: none;
-  color: yellow;
-  font-size: 18pt;
-  display: inline-flex;
-  text-align: center;
+.dark-mode {
+  background-color: #333; /* Adjust background color for dark mode */
+  color: #fff; /* Adjust text color for dark mode */
+  /* Add other styles for dark mode */
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px;
+  background-color: #1d4522; /* Dark background color */
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+}
+
+#navLinksHome, #navLinksAbout, #navLinksBook, #navLinksContact {
+  color: yellow;
+  padding: 5px;
+  font-size: 18pt;
+  margin-right: 15px;
   text-decoration: none;
+  border: 1px solid yellow;
+  border-radius: 5px;
+}
+
+#navLinksHome:hover, #navLinksAbout:hover, #navLinksBook:hover, #navLinksContact:hover {
+  background: yellow;
+  color: #1d4522
+}
+
+
+.search-bar {
+  height: 40px;
+  width: 30vw;
+  padding: 5px;
+  border: 2px solid #acacac; /* Example border color */
+  border-radius: 5px;
 }
 
 #Logo {
   display: block;
   height: 150px;
   margin: auto;
+}
+
+
+.card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 0px;
+  width: 300px;
+  background-color: #1d4522; /* Dark background color */
+  border-radius: 15px;
+}
+
+.card:hover {
+  transform: scale(1.15); /* Adjust the scale factor as needed */
+}
+
+
+.card-image {
+  width: 100%;
+  max-height: 200px; /* Adjust the max height as needed */
+  object-fit: cover;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+
+/* src/HomePage.css */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-link:hover {
+scale: 1.15;/* Change to your desired hover cursor */
+}
+
+
+.cardTitle, .cardDesc, .cardPrice {
+  color: yellow;
+}
+
+
+
+/* Styles for Booking Page */
+
+form {
+  display: block;
+  margin: auto;
+  background-color: #1d4522;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  text-align: center;
+}
+
+#bookTableh2,.homepageH2, .aboutH2, .contactH2{
+  margin-top: 0%;
+  margin-bottom: 0%;
+  display: flex;
+  justify-content: center;
+  color: yellow;
+  font-size: 40pt;
+}
+.aboutH2 {
+  color: yellow;
+}
+
+#guests {
+  width: 30%
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: yellow;
+  font-size: 18pt;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #acacac;
+  border-radius: 4px;
+  font-size: 14pt;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: 2px solid black;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+/* Styles for Contact Page */
+
+.contactList {
+  display: block !important;
+  margin-top: 0%;
+  width: 90vw;
+  background-color: #1d4522;
+  margin: auto;
+  text-align: center;
+  font-size: 40pt;
+  border: 3px solid yellow;
+  border-radius: 15px;
 }
