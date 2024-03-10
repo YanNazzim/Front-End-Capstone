@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ul {
+  display: flex;
+  width: 100vw;
+  background: #1d4522;
+}
+
+li, #navLinks {
+  list-style-type: none;
+  color: yellow;
+  font-size: 18pt;
+  display: inline-flex;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+#Logo {
+  display: block;
+  height: 150px;
+  margin: auto;
+}
