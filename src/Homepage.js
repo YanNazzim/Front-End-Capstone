@@ -4,10 +4,26 @@
 // Front End Capstone
 import React from "react";
 import Card from "./Components/Card";
+import { Helmet } from "react-helmet";
 
 const HomePage = () => {
   return (
     <div>
+      <Helmet>
+        {/* OGP Meta Tags */}
+        <meta property="og:title" content="Little Lemon Restaurant" />
+        <meta
+          property="og:description"
+          content="A site for little lemon made as part of my Front End Cpastone"
+        />
+        <meta
+          property="og:url"
+          content="https://github.com/YanNazzim/Front-End-Capstone"
+        />
+        <meta property="og:type" content="littlelemonrestaurant.com" />
+        {/* Add more OGP tags as needed */}
+      </Helmet>
+
       <h2 className="homepageH2">Featured Items</h2>
       <div className="card-container">
         <Card

@@ -7,10 +7,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
 import HomePage from "../src/Homepage";
-import BookingPage from "../src/Bookingpage";
+import BookingPage from "./src/Bookingpage";
 import AboutPage from "./Aboutpage";
 import ContactPage from "./Contactpage";
 import DarkModeProvider from "./Components/DarkModeProvider"; // Import the provider
+
 
 function App() {
   return (

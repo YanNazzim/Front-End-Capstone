@@ -2,8 +2,17 @@
 // Date: 3/10/2024
 // Front End Capstone
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 
 const BookingPage = () => {
+  <Helmet>
+    {/* OGP Meta Tags */}
+    <meta property="og:title" content="Little Lemon Restaurant" />
+    <meta property="og:description" content="A site for little lemon made as part of my Front End Cpastone" />
+    <meta property="og:url" content="https://github.com/YanNazzim/Front-End-Capstone" />
+    <meta property="og:type" content="littlelemonrestaurant.com" />
+    {/* Add more OGP tags as needed */}
+  </Helmet>
   const [name, setName] = useState("");
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
@@ -68,12 +77,12 @@ const BookingPage = () => {
           title="Format: ###-###-####"
         />
 
-        <label htmlFor="#ofGuests"># of Guests:</label>
+        <label htmlFor="guests"># of Guests:</label>
         <input
           type="number"
           min="1"
           max="8"
-          id="guests"
+          id="guests" // Make sure this id matches the htmlFor in the label
           value={guests}
           onChange={(e) => setGuests(e.target.value)}
           placeholder="#"

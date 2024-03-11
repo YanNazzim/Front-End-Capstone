@@ -4,12 +4,26 @@
 // Front End Capstone
 import React from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const AboutPage = () => {
-
-  
   return (
     <>
+      <Helmet>
+        {/* OGP Meta Tags */}
+        <meta property="og:title" content="Little Lemon Restaurant" />
+        <meta
+          property="og:description"
+          content="A site for little lemon made as part of my Front End Cpastone"
+        />
+        <meta
+          property="og:url"
+          content="https://github.com/YanNazzim/Front-End-Capstone"
+        />
+        <meta property="og:type" content="littlelemonrestaurant.com" />
+        {/* Add more OGP tags as needed */}
+      </Helmet>
+
       {/* Larger main section */}
       <div
         style={{
@@ -82,7 +96,7 @@ const AboutPage = () => {
 
         {/* Delivery */}
         <Link
-        className="card-link"
+          className="card-link"
           to="/contact"
           style={{
             borderRadius: "15px",
@@ -104,7 +118,7 @@ const AboutPage = () => {
 
         {/* Take-out */}
         <Link
-        className="card-link"
+          className="card-link"
           to="/contact"
           style={{
             borderRadius: "15px",
